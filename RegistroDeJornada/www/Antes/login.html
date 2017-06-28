@@ -1,0 +1,41 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">New Friend</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+        <ioncontent>
+        <br/><br/><br/><br/>
+          <div class = "card" border>
+            <ionitem class = "item-text-wrap">
+              <ionlist>
+                <label class = "item item-input">
+                  <input type = "Text" placeholder = "Name" name="name" ng-model="name">
+                </label>
+                <label class = "item item-input">
+                  <input type = "Text" placeholder = "Phone" name="phone" ng-model="phone">
+                </label>
+                <label class = "item item-input">
+                  <input type = "Text" placeholder = "Email" name="email">
+                </label>
+              </ionlist>
+              <button class="button button-dark button-block">Upload avatar</button>
+            </ionitem>            
+          </div>
+          <div class = "card">
+            <ionitem class = "item-text-wrap">
+              <button class="button button-dark button-block" ng-click="newFriend(name,phone)">Register friend</button>
+              <button class="button button-stable button-block" ng-click="closeLogin()">Cancel</button>
+            </ionitem>
+          </div>
+        </ioncontent>                
+</ion-content>
+</ion-modal-view>
+
+
+
+
+
+

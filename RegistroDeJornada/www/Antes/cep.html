@@ -1,0 +1,30 @@
+<ion-view view-title="CEP">
+        <ioncontent>
+        <br/><br/><br/>
+          <div class = "card" border>
+          	<h3 align="center"> CEP</h3>
+          </div>
+          <div class = "card">
+            <ion-list>
+             <label class = "item item-input">
+                <input type = "text" placeholder = "CEP" ng-model = "cep"> 
+              </label>
+              <button class="button button-dark button-block" ng-click= "consultarEndereco(cep)">Search address</button>
+
+              <ion-list ng-hide='endereco==null'>
+                <label class = "item item-input">
+                  Street <input type = "text" readonly placeholder = "Rua" value=": {{endereco.logradouro}}">
+                </label>
+                <label class = "item item-input">
+                  District <input type = "text" readonly placeholder = "Bairro" value=": {{endereco.bairro}}"> 
+                </label>
+                <label class = "item item-input">
+                  City <input type = "text" readonly placeholder = "Cidade / Estado" value=": {{endereco.localidade}} / {{endereco.uf}}">
+                </label>
+              </ion-list>
+            </ion-list>
+          </div>
+        </ioncontent>                
+</ion-view>
+
+

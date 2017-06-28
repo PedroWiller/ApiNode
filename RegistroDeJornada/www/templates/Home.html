@@ -1,0 +1,27 @@
+<ion-view view-title="Bem-Vindo" id="p1">
+<ion-content>
+<br/>
+    <div class = "card" border >
+    <img src="img/logo.jpg" class="img-responsive"/>    
+            <ionitem class = "item-text-wrap">
+              <ionlist>
+                <label class = "item item-input">
+                  <input type = "email" placeholder = "Email" ng-model="account.pNom_Apelido">
+                </label>
+                <label class = "item item-input">
+                  <input type = "password" placeholder = "Senha" ng-model="account.pNom_Senha">
+                </label>
+              </ionlist>
+            </ionitem>            
+          </div>
+
+          <div>
+            <ionitem class = "item-text-wrap">
+              <a menu-close button class="button button-positive button-block" href="#/app/iniciarJornada">Login</button></a>
+            </ionitem>
+          </div>
+          <div>
+          <a button class="button button-stable button-block" href="#/app/novaSenha">Esqueci minha senha!</button></a>
+          </div>
+  </ion-content>
+</ion-view>

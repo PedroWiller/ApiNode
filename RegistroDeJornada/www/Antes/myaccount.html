@@ -1,0 +1,14 @@
+<ion-view view-title="My account">
+        <ioncontent>
+        <br/><br/><br/>
+        <div class = "card-radius" align="center">
+            <img src="img/0.jpg" class="img-profile"/>
+        </div>          
+            <ion-item ng-repeat="register in registers" class="item-avatar item-text-wrap">           
+              <h2>{{ register.name}} {{ register.lastName}} </h2>
+                <br/> <h3 class="icon ion-android-call"> {{ register.phone }}</h3>
+                <br/> <h3 class="icon ion-at"> {{ register.email }}</h3>
+                <br/> <h3 class="icon ion-location"> {{ register.cep }}</h3>
+            </ion-item>
+        </ioncontent>                
+</ion-view>
